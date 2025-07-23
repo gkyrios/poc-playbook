@@ -8,3 +8,4 @@
       url: https://10.10.101.112/
       api_key: hbcrk68moj8i7eyi36gwy93b9y
       text: '{{ inventory_hostname }} completed'
+      validate_certs: false
