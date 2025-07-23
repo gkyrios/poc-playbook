@@ -6,6 +6,6 @@
   - name: Send notification message via Mattermost
     community.general.mattermost:
       url: https://10.10.101.112/
-      api_key: hbcrk68moj8i7eyi36gwy93b9y
+      api_key: oj3h64muwiy3dmqrq796s95qhh
       text: '{{ inventory_hostname }} completed'
       validate_certs: false
