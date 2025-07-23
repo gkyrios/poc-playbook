@@ -7,5 +7,15 @@
     community.general.mattermost:
       url: https://10.10.101.112/
       api_key: oj3h64muwiy3dmqrq796s95qhh
-      text: '{{ inventory_hostname }} completed'
       validate_certs: false
+      attachments:
+      - text: Display my system load on host A and B
+        color: '#ff00dd'
+        title: System load
+        fields:
+          - title: System A
+            value: "load average: 0,74, 0,66, 0,63"
+            short: true
+          - title: System B
+            value: 'load average: 5,16, 4,64, 2,43'
+            short: true
