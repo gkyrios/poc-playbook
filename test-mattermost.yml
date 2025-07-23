@@ -1,0 +1,10 @@
+---
+- name: Test connectivity to mattermost
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: Send notification message via Mattermost
+    community.general.mattermost:
+      url: https://10.10.101.112/
+      api_key: hbcrk68moj8i7eyi36gwy93b9y
+      text: '{{ inventory_hostname }} completed'
